@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Again</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        img {
+            height: 300px;
+            display: block;
+            margin: 50px auto;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: rgb(201, 84, 104);
+            font-size: 50px;
+            /* margin-bottom: -80px; */
+        }
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: rgb(201, 84, 104);
+        }
+        .no-button:hover {
+            position: relative;
+            left: 100px;  /* right side shift */
+            top: -50px;   /* thoda upar */
+            transition: 0.2s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="images/thinking.gif" alt="">
+    <div class="container">
+        <h1>Ek aur bar soch le...😖</h1>
+        <button onclick="window.location.href='yes.html'">Yes</button>
+        <button onclick="window.location.href='no.html'" class="no-button">No</button>
+        <script>
+            const noBtn = document.querySelector('.no-button');
+
+            noBtn.addEventListener('mouseenter', () => {
+                const x = Math.floor(Math.random() * 300); // random X position
+                const y = Math.floor(Math.random() * 300); // random Y position
+                noBtn.style.position = 'absolute';
+                noBtn.style.left = x + 'px';
+                noBtn.style.top = y + 'px';
+            });
+        </script>
+
+</body>
+</html>

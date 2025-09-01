@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No?? Really??</title>
+<style>
+    body {
+        background-color: #ffe0f0;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+    .msg {
+        margin-top: 150px;
+        font-size: 30px;
+        color: #ff3366;
+        animation: shake 1s infinite;
+    }
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-10px); }
+        50% { transform: translateX(10px); }
+        75% { transform: translateX(-10px); }
+    }
+    img {
+        width: 200px;
+        margin-top: 20px;
+    }
+    button
+    {
+        background-color: #ff3366;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #ca3e6d;
+    }
+</style>
+</head>
+<body>
+    <div class="msg">Soch le Acche se! 🙄</div>
+    <img src="images/cry.gif" alt="crying emoji"><br>
+    <button onclick="ok()">Yes</button>
+    <button onclick="no()">No</button>
+    <script>
+        function ok() {
+            window.location.href = 'yes.html'; // Redirect to trial.html
+        }
+        function no() {
+            window.location.href = 'trial_again.html'; // Redirect to trial.html
+        }
+        // document.querySelector('button').addEventListener('click', function() {
+        //     alert('Aww, it\'s okay! Let\'s talk later.');
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     alert('Take your time, I\'ll be here!');
+        // });
+        // document.querySelectorAll('button')[0].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[0].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[0].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[0].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[0].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+        // document.querySelectorAll('button')[1].addEventListener('click', function() {
+        //     window.location.href = 'trial.html'; // Redirect to trial.html
+        // });
+    </script>
+</body>
+</html>
